@@ -1,0 +1,21 @@
+.shows-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shows-list article {
+  margin-bottom: 20px;
+  filter: drop-shadow(8px 8px 4px rgba(52, 73, 94, 0.25));
+  transition: all 0.5;
+  cursor: pointer;
+}
+
+.shows-list article,
+.shows-list article img {
+  border-radius: 8px;
+}
+
+.shows-list article:hover {
+  opacity: 0.9;
+}
