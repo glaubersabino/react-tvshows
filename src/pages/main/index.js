@@ -15,9 +15,7 @@ export default class Main extends Component {
 
   loadMovies = async () => {
     const response = await api.get("/shows");
-    console.log(this.state.shows);
     this.setState({ shows: response.data });
-    console.log(this.state.shows[0].name);
   };
 
   render() {

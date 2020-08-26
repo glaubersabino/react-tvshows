@@ -1,0 +1,28 @@
+.shows-list {
+  display: flex;
+}
+
+.shows-list img {
+  border-radius: 8px;
+  filter: drop-shadow(8px 8px 4px rgba(52, 73, 94, 0.25));
+}
+
+.shows-list .show-details {
+  max-width: 1000px;
+}
+
+.shows-list .show-details h1 {
+  font-size: 48px;
+  font-weight: normal;
+}
+.shows-list .show-details p {
+  margin-bottom: 10px;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+}
+
+.shows-list .show-details .summary {
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+}
