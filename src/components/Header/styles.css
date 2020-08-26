@@ -1,0 +1,31 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.main-header .main-logo {
+  height: 78px;
+  max-width: 308px;
+}
+
+.main-header .main-menu {
+  display: flex;
+  list-style: none;
+}
+
+.main-header .main-menu li {
+  font-size: 48px;
+  margin-left: 39px;
+}
+
+.main-header .main-menu li a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.main-header .main-menu li a:hover {
+  color: #e74c3c;
+}
