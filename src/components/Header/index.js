@@ -7,10 +7,10 @@ const Header = () => (
     <img src={logo} className="main-logo" alt="React TVShows" />
     <ul className="main-menu">
       <li>
-        <a href="">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <a href="">TVShows</a>
+        <a href="/">TVShows</a>
       </li>
     </ul>
   </header>
