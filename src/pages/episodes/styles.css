@@ -1,0 +1,30 @@
+.episodes-list {
+  width: 100%;
+  max-width: 1255px;
+  margin-top: 30px;
+}
+
+.episodes-list h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.episodes-list .episodes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.episodes-list .episodes .episode-info {
+  display: flex;
+  max-height: 161px !important;
+}
+
+.episodes-list .episodes .episode-info div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  justify-content: space-between;
+}

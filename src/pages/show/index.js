@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import api from "../../services/api";
 
 import "./styles.css";
@@ -8,10 +9,12 @@ export default class Show extends Component {
     tvshow: [],
     tvImage: "",
     tvRating: "",
+    seasons: [],
   };
 
   componentDidMount() {
     this.loadMovie();
+    this.loadSeasons();
   }
 
   loadMovie = async () => {
@@ -24,11 +27,18 @@ export default class Show extends Component {
     });
   };
 
+  loadSeasons = async () => {
+    const { id } = this.props.match.params;
+    const response = await api.get(`/shows/${id}/seasons`);
+    this.setState({ seasons: response.data });
+  };
+
   render() {
-    const { tvshow, tvImage, tvRating } = this.state;
+    const { tvshow, tvImage, tvRating, seasons } = this.state;
+
     return (
       <div className="shows-list">
-        <img src={tvImage} />
+        <img src={tvImage} alt={tvshow.name} />
 
         <div className="show-details">
           <div className="show-header">
@@ -39,6 +49,21 @@ export default class Show extends Component {
           <p>{tvshow.status}</p>
           <p>{tvshow.language}</p>
           <p className="summary">{tvshow.summary}</p>
+        </div>
+        <div className="seasons-list">
+          <h1>Seasons</h1>
+          <div className="seasons">
+            {seasons.map((seasons) => (
+              <Link to={`/episodes/${seasons.id}`} key={seasons.id}>
+                <article>
+                  <img
+                    src={seasons.image.medium}
+                    alt={`Season ${seasons.number}`}
+                  />
+                </article>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     );

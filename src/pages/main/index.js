@@ -24,8 +24,8 @@ export default class Main extends Component {
     return (
       <div className="shows-list">
         {shows.map((shows) => (
-          <Link to={`/show/${shows.id}`}>
-            <article key={shows.id}>
+          <Link to={`/show/${shows.id}`} key={shows.id}>
+            <article>
               <img src={shows.image.medium} alt={shows.name} />
             </article>
           </Link>
