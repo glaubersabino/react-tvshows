@@ -8,6 +8,9 @@ const App = () => (
   <div className="App">
     <Header />
     <Routes />
+    <p className="copy">
+      All data consumed from the http://www.tvmaze.com/ API
+    </p>
   </div>
 );
 

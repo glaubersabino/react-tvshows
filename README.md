@@ -1,6 +1,8 @@
 # React TVShows
 
-## O React TVShows é um app que exibe uma lista de séries de tv e permite que o usuário navegue entre elas, sendo possível obter informações sobre a série, como a quantidade de temporadas e sobre todos os episódios das mesmas.
+![Screenshot](public/screenshot.png)
+
+## O React TVShows é um app que exibe uma lista de séries de tv e permite que o usuário navegue entre elas, sendo possível obter informações sobre a série, como a quantidade de temporadas e sobre todos os episódios das mesmas. Todas as informações são consumidas através da API do site http://www.tvmaze.com/.
 
 <p align="center">
   <img alt="Reactjs" src="https://img.shields.io/badge/reactjs-16.13.1-blue?style=for-the-badge&logo=reactjs.svg">
